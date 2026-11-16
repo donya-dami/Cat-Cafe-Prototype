@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book a Cat</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="logo-title">
+    <h1 class="site-title">Meowdani</h1>
+    <p class="site-tagline">Cat Cafe</p>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="book.html">Meet Your Perfect Cat</a>
+    <a href="game.html">Game Center</a>
+    <a href="menu.html">Menu</a>
+    <a href="merch.html">Merch</a>
+  </nav>
+
+  <a href="index.html#auth-section" class="btn btn-outline login-top">Login</a>
+</header>
+
+<main id="main-content">
+
+<section class="page-hero">
+    <h2>Meet Our Cats</h2>
+
+    <!-- slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade"><img src="img/cat-1.png" style="height:10rem; width: 10rem;"></div>
+        <div class="mySlides fade"><img src="img/cat-2.png" style="height:10rem; width: 10rem;"></div>
+        <div class="mySlides fade"><img src="img/cat-3.png" style="height:10rem; width: 10rem;"></div>
+        <div class="mySlides fade"><img src="img/cat-4.png" style="height:10rem; width: 10rem;"></div>
+    </div>
+</section>
+
+<section class="auth-section">
+<h2 class="section-title">Book a Visit</h2>
+
+<div class="auth-forms">
+
+<!-- form to book slot w cats (AKA our vers of shopping cart -->
+<form class="auth-form" method="post" action="book.php">
+
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Date & Time</label>
+<select name="date-time" id="date-time" required></select>
+
+<label>Select Cats ($5 each)</label>
+
+<label><input type="checkbox" name="cats[]" value="Mittens"> Mittens</label>
+<label><input type="checkbox" name="cats[]" value="Sadie"> Sadie</label>
+<label><input type="checkbox" name="cats[]" value="Arthur"> Arthur</label>
+<label><input type="checkbox" name="cats[]" value="Lancelot"> Lancelot</label>
+<label><input type="checkbox" name="cats[]" value="Dolly">Dolly</label>
+
+<input type="hidden" name="total" id="totalInput" value="0.00">
+<p><strong>Total: $<span id="totalDisplay">0.00</span></strong></p>
+
+<button class="btn btn-outline form-btn" type="submit">
+    Submit Booking
+</button>
+
+</form>
+
+</div>
+</section>
+
+</main>
+
+<script src="book.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meowdani Cafe Menu</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="logo-title">
+                <h1 class="site-title">Meowdani</h1>
+                <p class="site-tagline">Cat Cafe</p>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="book.html">Meet Your Perfect Cat</a>
+                <a href="game.html">Game Center</a>
+                <a href="menu.html">Menu</a>
+                <a href="merch.html">Merch</a>
+            </nav>
+
+            <a href="index.html#auth-section" class="btn btn-outline login-top">Login</a>
+        </header>
+
+        <main id="main-content">
+            <section class="page-hero">
+                <h2>Cafe Menu</h2>
+                <p>
+                    Drinks and snacks crafted to keep you cozy while the cats
+                    curl up nearby.
+                <!-- Search Bar -->
+                <form action="search.php" method="GET" class="menu-search-form">
+                    <label for="query">Search our menu:</label>
+                    <input id="search-bar" type="text" id="query" name="query" placeholder="e.g., latte, brownie" required>
+                    <button type="submit" class="btn btn-outline">Search</button>
+                </form>
+            </section>
+
+            <!-- Menu Results -->
+            <section class="menu-grid">
+                <article class="menu-card">
+                    <h3 class="menu-section-title">Catpuccinos & Lattes</h3>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Classic Latte</span>
+                        <span class="menu-item-price">$4.50</span>
+                    </div>
+                    <p class="menu-item-note">Espresso with steamed milk. Meow-approved.</p>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Vanilla Catpuccino</span>
+                        <span class="menu-item-price">$5.00</span>
+                    </div>
+                    <p class="menu-item-note">Foamy, sweet, and perfect for cat-watching.</p>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Strawberry Matcha Meow Latte</span>
+                        <span class="menu-item-price">$5.25</span>
+                    </div>
+                    <p class="menu-item-note">Creamy matcha with a soft green hue.</p>
+                </article>
+
+                <article class="menu-card">
+                    <h3 class="menu-section-title">Tea & Cool Drinks</h3>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Chamomile Nap Time Tea</span>
+                        <span class="menu-item-price">$3.75</span>
+                    </div>
+                    <p class="menu-item-note">Relaxing herbal tea for slow afternoons.</p>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Iced Pink Paw Lemonade</span>
+                        <span class="menu-item-price">$4.25</span>
+                    </div>
+                    <p class="menu-item-note">Lemonade with a hint of berry and fizz.</p>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Sparkling Catnip Spritz</span>
+                        <span class="menu-item-price">$4.50</span>
+                    </div>
+                    <p class="menu-item-note">Minty, bubbly, and refreshing.</p>
+                </article>
+
+                <article class="menu-card">
+                    <h3 class="menu-section-title">Snacks & Treats</h3>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Paw Print Cookie</span>
+                        <span class="menu-item-price">$2.50</span>
+                    </div>
+                    <p class="menu-item-note">Sugar cookie with a chocolate paw design.</p>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Kitty Corner Brownie</span>
+                        <span class="menu-item-price">$3.00</span>
+                    </div>
+                    <p class="menu-item-note">Rich chocolate brownie with a fudge swirl.</p>
+
+                    <div class="menu-item">
+                        <span class="menu-item-name">Mini Cheese Paw-sant</span>
+                        <span class="menu-item-price">$3.25</span>
+                    </div>
+                    <p class="menu-item-note">Flaky crescent with a cheesy center.</p>
+                </article>
+            </section>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Hours: Every day 10am - 7pm. Late appointments available upon request.</p>
+            <p>123 W 4th Street New York, NY 12345</p>
+            <br>
+            <p><a href=book.html> Book Now</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=game.html>Play The Game</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=menu.html>View Our Menu</a></p>
+            <br>
+            <p>© 2025 Meowdani Cat Cafe. Made with love and cat hair.</p>
+        </footer>
+    </body>
+</html>
+
+
+

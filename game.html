@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+      <header class="main-header">
+            <div class="logo-title">
+                <h1 class="site-title">Meowdani</h1>
+                <p class="site-tagline">Cat Cafe</p>
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="book.html">Meet Your Perfect Cat</a>
+                <a href="game.html">Game Center</a>
+                <a href="menu.html">Menu</a>
+                <a href="merch.html">Merch</a>
+            </nav>
+
+            <a href="index.html#auth-section" class="btn btn-outline login-top">Login</a>
+      </header>
+    
+    <main id="game-hero">
+
+      <img class="paw-left" src="img/left-paw.png" alt="">
+      <img class="paw-right" src="img/right-paw.png" alt="">
+
+      <div id="center-content">
+
+        <div id="game-center-screen" class="unhide">
+          <h1>Game Center</h1>
+          <button class="btn btn-outline" id="memory-game-btn"><em>Purr</em>fect Memory Game</button>
+        </div>
+      
+        <div id="memory-game-screen" class="hide">
+      
+          <h1><em>Purr</em>fect Memory Game</h1>
+        
+          <p>
+            Difficulty:
+            <select id="difficulty-select" class="btn btn-outline">
+              <option value="easy">easy (3x4)</option>
+              <option value="medium">medium (4x5)</option>
+              <option value="hard">hard (4x6)</option>
+            </select>
+          </p>
+
+          <button id="start-memory-game" class="btn btn-outline">Start Game</button>
+          <button id="return-game-center" class="btn btn-outline">Return to Game Center </button>
+        
+          <p>Time: <span id="memory-time">0</span> seconds</p>
+
+          <p id="game-stats">Best Time: <span id="high-score">--</span> seconds</p>
+        
+          <div id="memory-container"></div>
+
+        </div>
+
+      </div>
+
+      <!-- GAME OVER MODAL -->
+      <div id="gameover-modal" class="hide">
+        <div id="gameover-content">
+            <h2>Game Over!</h2>
+            <p id="gameover-time"></p>
+            <p id="gameover-best"></p>
+            <button id="play-again" class="btn btn-primary">Play Again</button>
+            <button id="close-modal" class="btn btn-outline" style="margin-top:8px;">Close</button>
+        </div>
+      </div>
+      
+    </main>
+
+    <footer class="site-footer">
+            <p>Hours: Every day 10am - 7pm. Late appointments available upon request.</p>
+            <p>123 W 4th Street New York, NY 12345</p>
+            <br>
+            <p><a href=book.html> Book Now</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=game.html>Play The Game</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=menu.html>View Our Menu</a></p>
+            <br>
+            <p>© 2025 Meowdani Cat Cafe. Made with love and cat hair.</p>
+        </footer>
+  
+    <script src="game-script.js"></script>
+
+  </body>
+</html>
+
