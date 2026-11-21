@@ -1,2 +1,2 @@
 # Cat-Cafe-Prototype
-Re-upload of a cat cafe prototype I did with two classmates (Lillian Bedore, Karina Rower) for a Web Development Class at NYU to make it accessible via GitHub link. See original with the commit/version history here: https://github.com/LillianBedore/Meowdani-Cat-Cafe
+Re-upload of a cat cafe prototype I did with two classmates (Lillian Bedore, Karina Rower) for a Web Development Class at NYU to make it accessible via GitHub link. PHP functionality doesnt work on Github as it only renders static sites and this is meant to be viewed as a demo. See original with the commit/version history here: https://github.com/LillianBedore/Meowdani-Cat-Cafe
